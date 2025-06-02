@@ -2,12 +2,30 @@
     font-family: arial;
 }
 
-#back{
-    position: fixed;
-    top: 0;
-    left: 0;
+article h2 {
+    text-align: center;
+    color: white;
+}
+
+article p{
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+}
+
+body{
+    overflow: hidden;
+    background-image: url("/img/Back.jpg");
+}
+
+.img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
-    border: 2px solid black;
+    z-index: -2;
 }
 
 .header{
@@ -24,22 +42,21 @@
 .nav{
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 .logo{
-    font-size: 30px;
-    color: white;
-    padding: 0 50px;
-    line-height: 50px;
-    text-decoration: none;
+    float: left;
+    align-self: center;
+    margin-left: 5%;
 }
 
 .menu{
     color: white;
     list-style: none;
     display: flex;
-    line-height: 65px;
-    margin-right: 10%;
+    align-self: center;
+    margin-left: 45%;
 }
 
 .menu-link{
@@ -61,7 +78,7 @@
 }
 
 .section{
-    overflow-y: scroll;
+    overflow-y: auto;
     display: flex;
     position: fixed;
     flex-wrap: wrap;
@@ -69,6 +86,27 @@
     left: 0;
     width: 100%;
     height: 80%;
+}
+
+.section-personajes{
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    top: 15%;
+    left: 30%;
+    width: 100%;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.aside{
+    overflow: hidden;
+    position: fixed;
+    top:15%;
+    left: 0;
+    height:80%;
+    width: 30%;
+    border-right: 4px solid white;
 }
 
 .footer{
@@ -91,9 +129,8 @@
     height: 80%;
     width: 40%;
     background-color: grey;
-    margin: 55px 65px;
-    color: white;
     text-align: center;
+    margin: 2% 4%;
     border-radius: 30px;
 }
 
@@ -105,44 +142,37 @@
     padding-left: 5%;
     padding-right: 5%;
     background-color: grey;
-    margin: 55px 65px;
-    color: white;
-    text-align: center;
+    margin: 2% 4%;
     font-size: 25px;
     border-radius: 30px;
 }
 
+.profile-link{
+    margin-right: 5%;
+    align-self: center;
+}
+
 .profile-container{
     display: flex;
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    left:92.25%;
-    bottom: 12%;
+    height: 60px;
+    width: 60px;
     background-color: grey;
-    border-radius: 100px;
+    border-radius: 50%;
     justify-content: center;
     align-items: center;
 }
 
 .profile-container:hover{
-    display: flex;
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    left:92.25%;
-    bottom: 12%;
     background-color: white;
     transition: 0.5s;
-    border-radius: 100px;
-    justify-content: center;
-    align-items: center;
 }
 
 .profile-img{
-   position: relative;
-   height:40px;
-   width: 40px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   
 }
 
 .bienvenida{
@@ -179,4 +209,83 @@
     position:relative;
     height: 70%;
     width: 79%;
+}
+
+.pagination {
+  display: inline-block;
+  position: fixed;
+  align-self: end;
+  left: 58%;
+  border: 2px solid white;
+}
+
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: black;
+}
+
+.pagination a:hover{
+    background-color: grey;
+    transition: 0.5s;
+}
+
+.article-personaje{
+    position: relative;
+    display: block;
+    height: 80%;
+    width: 60%;
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+    align-self: center;
+    margin: 3% 5% 3%;
+    opacity: 0.9;
+}
+
+.article-personaje iframe{
+    display: flex;
+    justify-self: center;
+    opacity: 1;
+}
+
+.article-form{
+    position: relative;
+    display: block;
+    height: 80%;
+    width: 50%;
+    align-self: center;
+    margin: 0 auto;
+    background-color: black;
+    opacity: 0.95;
+    border-radius: 12px;
+}
+
+.table{
+    color: white;
+    margin: 0 auto;
+    align-self: center;
+    padding-top: 8%;
+}
+
+input{
+    width: 70%;
+    padding: 3%;
+    border-radius: 12px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: grey;
+    transition: 0.5s;
 }

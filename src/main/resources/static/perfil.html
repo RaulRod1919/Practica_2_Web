@@ -11,31 +11,61 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        
+
         <header class="header">
-            
+
             <nav class="nav">
                 <h1 class="logo"><a href="index.html" class="menu-link">BERSERK</a></h1>
                 <ul class="menu">
                     <li class="item"><a href="informacion.html" class="menu-link menu-trans">Informacion</a></li>
                     <li class="item"><a href="personajes.html" class="menu-link menu-trans">Personajes</a></li>
-                    <a href="perfil.html">
-                        <div class="profile-container">
-                            <img src="img/user.png" class="profile-img">
-                        </div>
-                    </a>
                 </ul>
+
+                <a href="perfil.html" class="profile-link">
+                    <div class="profile-container">
+                        <img src="img/user.png" class="profile-img">
+                    </div>
+                </a>
             </nav>
-            
+
         </header>
-        
+
         <section class="section">
-            
+            <article class="article-form">
+                <h2>PERFIL</h2>
+                <hr>
+                <form action="#">
+                <table border="0" cellspacing="5" cellpadding="2" class="table">
+                    <tbody>
+                        <tr>
+                            <td>Nombre</td>
+                            <td><input type="text" name="nombre" placeholder="Nombre" size="25"</td>
+                        </tr>
+                        <tr>
+                            <td>Usuario</td>
+                            <td><input type="text" name="usuario" size="20" placeholder="Nombre de Usuario"></td>
+                        </tr>
+                        <tr>
+                            <td>Correo</td>
+                            <td><input type="email" name="correo" size="40" placeholder="correo@gmail.com"></td>
+                        </tr>
+                        <tr>
+                            <td>Contraseña</td>
+                            <td><input type="password" name="password"></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button">Acceder</button></td>
+                            <td><button type="button">Registrar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            </article>
         </section>
-        
+
         <footer class="footer">
-            
+
         </footer>
-        
+
     </body>
 </html>
